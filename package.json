@@ -1,0 +1,38 @@
+{
+  "name": "func-to-route",
+  "version": "0.1.0",
+  "description": "Transform any async function into a type-safe API route with built-in auth and error handling",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prebuild": "npm run format:check",
+    "prepublishOnly": "npm run build",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md}\""
+  },
+  "keywords": [
+    "nextjs",
+    "api",
+    "route",
+    "typescript",
+    "auth",
+    "middleware",
+    "function",
+    "serverless"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "next": "^14.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.0.0"
+  }
+}
